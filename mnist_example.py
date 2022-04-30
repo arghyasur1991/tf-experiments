@@ -2,8 +2,12 @@ from tensorflow.keras.datasets import mnist
 from tensorflow import keras
 from tensorflow.keras import layers
 
+import tensorflow as tf
+# tf.config.set_visible_devices([], 'GPU')
+
 
 def train_mnist_model(data, labels):
+    # tf.debugging.set_log_device_placement(True)
     model = keras.Sequential([
         layers.Dense(512, activation="relu"),
         layers.Dense(10, activation="softmax")

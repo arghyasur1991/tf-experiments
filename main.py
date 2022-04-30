@@ -6,4 +6,4 @@ from tensorflow.keras import layers
 
 import mnist_example
 
-# mnist_example.load_and_train_mnist()
+mnist_example.load_and_train_mnist()
